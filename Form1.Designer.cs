@@ -62,11 +62,13 @@
             // 
             // textBox1
             // 
+            textBox1.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
             textBox1.Location = new Point(37, 24);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(294, 35);
             textBox1.TabIndex = 1;
+            textBox1.TextAlign = HorizontalAlignment.Right;
             textBox1.TextChanged += textBox1_TextChanged;
             // 
             // button2

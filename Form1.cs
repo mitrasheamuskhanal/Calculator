@@ -113,10 +113,10 @@ namespace Calculator
         {
             value2 = Convert.ToInt32(textBox1.Text);
             label2.Text = textBox1.Text;
-            if(sign == "+") 
-            { 
-                result=value1 + value2;
-                textBox1.Text= Convert.ToString(result);
+            if (sign == "+")
+            {
+                result = value1 + value2;
+                textBox1.Text = Convert.ToString(result);
             }
             else if (sign == "-")
             {
