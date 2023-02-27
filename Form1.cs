@@ -112,6 +112,27 @@ namespace Calculator
         private void button14_Click(object sender, EventArgs e)
         {
             value2 = Convert.ToInt32(textBox1.Text);
+            label2.Text = textBox1.Text;
+            if(sign == "+") 
+            { 
+                result=value1 + value2;
+                textBox1.Text= Convert.ToString(result);
+            }
+            else if (sign == "-")
+            {
+                result = value1 - value2;
+                textBox1.Text = Convert.ToString(result);
+            }
+            else if (sign == "*")
+            {
+                result = value1 * value2;
+                textBox1.Text = Convert.ToString(result);
+            }
+            else if (sign == "/")
+            {
+                result = value1 / value2;
+                textBox1.Text = Convert.ToString(result);
+            }
         }
     }
 }
