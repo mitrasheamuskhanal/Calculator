@@ -6,6 +6,7 @@ namespace Calculator
         int value2;
         int value3;
         double result = 0;
+        string sign;
         public Form1()
         {
             InitializeComponent();
@@ -78,7 +79,39 @@ namespace Calculator
 
         private void button4_Click(object sender, EventArgs e)
         {
+            value1 = Convert.ToInt32(textBox1.Text);
+            sign = "+";
+            label1.Text = textBox1.Text + sign;
+            textBox1.Text = "";
+        }
 
+        private void button5_Click(object sender, EventArgs e)
+        {
+            value1 = Convert.ToInt32(textBox1.Text);
+            sign = "-";
+            label1.Text = textBox1.Text + sign;
+            textBox1.Text = "";
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            value1 = Convert.ToInt32(textBox1.Text);
+            sign = "*";
+            label1.Text = textBox1.Text + sign;
+            textBox1.Text = "";
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            value1 = Convert.ToInt32(textBox1.Text);
+            sign = "/";
+            label1.Text = textBox1.Text + sign;
+            textBox1.Text = "";
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            value2 = Convert.ToInt32(textBox1.Text);
         }
     }
 }
