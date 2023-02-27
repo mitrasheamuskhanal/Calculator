@@ -224,7 +224,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(297, 7);
+            label1.Location = new Point(291, 6);
             label1.Name = "label1";
             label1.Size = new Size(0, 15);
             label1.TabIndex = 17;
@@ -266,6 +266,7 @@
             MaximizeBox = false;
             Name = "Form1";
             Text = "Calculator ";
+            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }

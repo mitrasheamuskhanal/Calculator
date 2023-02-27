@@ -75,6 +75,8 @@ namespace Calculator
         private void button15_Click(object sender, EventArgs e)
         {
             textBox1.Text = "";
+            label1.Text = "";
+            label2.Text = "";
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -133,6 +135,11 @@ namespace Calculator
                 result = value1 / value2;
                 textBox1.Text = Convert.ToString(result);
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
